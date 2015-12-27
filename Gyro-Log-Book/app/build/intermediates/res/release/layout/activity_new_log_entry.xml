@@ -1,0 +1,281 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cust_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCDCDC"
+    tools:context=".NewCustomer" >
+
+    <TextView
+        android:id="@+id/textView1"
+        style="@style/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="Log-Book Entry"
+        android:textSize="20sp" />
+
+    <FrameLayout
+        android:id="@+id/cust_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/textView1" >
+ 
+ 		<include layout="@layout/view_log_entry"
+             />
+        
+    </FrameLayout>
+<!--
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/nNumV" />
+     
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/address" />
+    
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/city" />
+    
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/state" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_marginRight="66dp"
+        android:text="@string/zip" />
+
+    <Button
+        android:id="@+id/button_log_cancel
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_cust_save"
+        android:layout_alignBottom="@+id/button_cust_save"
+        android:layout_toRightOf="@+id/TextView04"
+        android:onClick="cancelSaveNewLogEntry"
+        android:text="@string/button_cancel" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView01"
+        android:layout_alignBottom="@+id/TextView01"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/TextView02"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView02"
+        android:layout_alignBottom="@+id/TextView02"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/TextView02"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/editText8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView06"
+        android:layout_alignBottom="@+id/TextView06"
+        android:layout_alignLeft="@+id/textView1"
+        android:ems="10"
+        android:inputType="textMultiLine|textCapSentences" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView3"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/textView2"
+        android:ems="10"
+        android:inputType="textPersonName|textCapWords"
+        android:textSize="14sp" >
+        <requestFocus />
+    </EditText>
+        
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/EditText01"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/textView3"
+        android:ems="10"
+        android:inputType="textPostalAddress|textCapWords"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/EditText01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/textView4"
+        android:ems="10"
+        android:inputType="textPostalAddress|textCapWords"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="18dp"
+        android:text="@string/email" />
+
+    <EditText
+        android:id="@+id/EditText02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_toLeftOf="@+id/textView6"
+        android:layout_toRightOf="@+id/TextView05"
+        android:ems="10"
+        android:inputType="textPostalAddress|textCapCharacters"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView6"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/TextView04"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView01"
+        android:layout_below="@+id/editText4"
+        android:layout_marginTop="18dp"
+        android:text="@string/phone" />
+
+    <TextView
+        android:id="@+id/TextView06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView05"
+        android:layout_alignLeft="@+id/TextView05"
+        android:layout_marginTop="18dp"
+        android:text="@string/poolinfo" />
+
+    <TextView
+        android:id="@+id/TextView05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText9"
+        android:layout_alignLeft="@+id/TextView03"
+        android:text="@string/price" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText5"
+        android:layout_toLeftOf="@+id/TextView04"
+        android:layout_toRightOf="@+id/TextView03"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:inputType="date" />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editText6"
+        android:layout_alignBottom="@+id/editText6"
+        android:layout_alignLeft="@+id/TextView02"
+        android:text="@string/date" />
+
+    <TextView
+        android:id="@+id/TextView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editText6"
+        android:layout_alignBottom="@+id/editText6"
+        android:layout_alignLeft="@+id/textView6"
+        android:text="@string/time" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView04"
+        android:layout_alignBottom="@+id/TextView04"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/TextView04"
+        android:ems="10"
+        android:inputType="time" />
+
+    <Button
+        android:id="@+id/button_cust_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText5"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="22dp"
+        android:onClick="saveNewLogEntry"
+        android:text="@string/button_save" />
+
+    <EditText
+        android:id="@+id/editText9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText6"
+        android:layout_alignRight="@+id/editText6"
+        android:layout_toRightOf="@+id/textView5"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+-->    
+</RelativeLayout><!-- From: file:/C:/Users/Federico%20Watkins/OneDrive/SkyNSU/Winter%202015/Mobile/Homeworks/Gyro-Log-Book/app/src/main/res/layout/activity_new_log_entry.xml -->

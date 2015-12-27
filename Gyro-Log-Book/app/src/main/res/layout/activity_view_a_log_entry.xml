@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffff926"
+    tools:context=".ViewAcustomer" >
+
+    <TextView
+        android:id="@+id/layout_title"
+        style="@style/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="View a Log Entry"
+        android:textSize="20sp" />
+    
+    <Spinner
+        android:id="@+id/LOG_ENTRY_LIST"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/layout_title" />
+    
+    <FrameLayout
+        android:id="@+id/cust_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/LOG_ENTRY_LIST" >
+ 
+ 		<include layout="@layout/view_log_entry" />
+        
+    </FrameLayout>
+ 	
+</RelativeLayout>

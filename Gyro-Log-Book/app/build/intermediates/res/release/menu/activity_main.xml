@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_about"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/menu_about"/>
+
+    <item
+        android:id="@+id/menu_preferences"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/edit_preferences"/>
+    
+</menu><!-- From: file:/C:/Users/Federico%20Watkins/OneDrive/SkyNSU/Winter%202015/Mobile/Homeworks/Gyro-Log-Book/app/src/main/res/menu/activity_main.xml -->

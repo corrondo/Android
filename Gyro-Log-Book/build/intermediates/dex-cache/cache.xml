@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Federico Watkins\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-v4\18.0.0\support-v4-18.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="C:\Users\Federico Watkins\OneDrive\SkyNSU\Winter 2015\Mobile\Homeworks\Gyro-Log-Book\app\build\intermediates\pre-dexed\debug\support-v4-18.0.0-770f7a1be6f6e3a3422f4219f5745e43d0a119fc.jar" />
+    </item>
+
+</items>

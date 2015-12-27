@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#fffffa35">
+
+    <TextView
+        android:id="@+id/textView1"
+        style="@style/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:gravity="center_horizontal"
+        android:text="@string/edit_preferences"
+        android:textSize="20sp" />
+    
+</LinearLayout><!-- From: file:/C:/Users/Federico%20Watkins/OneDrive/SkyNSU/Winter%202015/Mobile/Homeworks/Gyro-Log-Book/app/src/main/res/layout/preference_title.xml -->

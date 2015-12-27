@@ -1,0 +1,77 @@
+<resources>
+    
+    <color name="white">#ffffff</color>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+		
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+     	<item name="android:windowNoTitle">true</item>
+    </style>
+    
+	<style name="SplashThemeBlue" parent="AppBaseTheme">
+    	<item name="android:windowBackground">@color/white</item>
+    	<item name="android:windowNoTitle">true</item>
+    </style>
+    
+	<style name="SplashThemeDefault" parent="AppBaseTheme">
+    	<item name="android:windowBackground">@drawable/autogyro</item>
+    	<item name="android:windowNoTitle">true</item>
+    </style>
+	
+	<style name="SplashTheme1" parent="AppBaseTheme">
+    	<item name="android:windowBackground">@drawable/gyro4</item>
+    	<item name="android:windowNoTitle">true</item>
+    </style>
+	
+	<style name="SplashTheme2" parent="AppBaseTheme">
+    	<item name="android:windowBackground">@drawable/gyro2</item>
+    	<item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- Menu theme. -->
+    <style name="MenuTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowBackground">@drawable/gryo3</item>
+     	<item name="android:windowNoTitle">true</item>
+    </style>
+    
+    <style name="title" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:textStyle">bold</item>
+     </style>
+    
+    <style name="main_title" parent="@android:style/TextAppearance.Large">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:textStyle">bold|italic</item>
+     </style>
+    
+    <style name="font_small" parent="AppTheme">
+        <item name="android:textSize">10sp</item>
+    </style>
+    
+    <style name="font_medium" parent="AppTheme">
+        <item name="android:textSize">14sp</item>
+    </style>
+        
+    <style name="font_large" parent="AppTheme">
+        <item name="android:textSize">18sp</item>
+    </style>
+    
+</resources>

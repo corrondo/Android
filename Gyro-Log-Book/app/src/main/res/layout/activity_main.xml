@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/gryo3"
+    >
+<!--windowBackground now in Activity theme MenuTheme
+	android:background="@drawable/softblue" -->
+    
+	<TextView
+	    android:id="@+id/menu_title"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="21dp"
+	    android:text="Gyro Log-Book"
+	    style="@style/title" />
+    
+    <Button
+        android:id="@+id/new_log_entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/menu_title"
+        android:layout_marginTop="21dp"
+        android:text="@string/Insert_Entry"
+        android:onClick="newLogEntry" />
+
+    <Button
+        android:id="@+id/list_all_log_entries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/new_log_entry"
+        android:text="List All Log Entries"
+        android:onClick="listAllLogEntry" />
+    <Button
+        android:id="@+id/search_log_entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/list_all_log_entries"
+        android:text="Search Log Book"
+        android:onClick="goToSearch" />
+
+    <Button
+        android:id="@+id/view_a_log_entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/search_log_entry"
+        android:text="View a Log Entry"
+        android:onClick="viewALogEntry" />
+
+    <Button
+        android:id="@+id/edit_a_log_entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/view_a_log_entry"
+        android:text="Edit A Log Entry"
+        android:onClick="editAnEntry" />
+
+    <Button
+        android:id="@+id/delete_a_log_entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/edit_a_log_entry"
+        android:text="Delete a Log Entry"
+        android:onClick="deleteAnEntry" />
+    
+    <Button
+        android:id="@+id/todays_log_entries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/delete_a_log_entry"
+        android:text="Today&apos;s Log Entries"
+        android:onClick="todaysLogEntry" />
+    
+</RelativeLayout>
